@@ -1,11 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="title">
+        <h4>GIỎ HÀNG</h4>
+      </div>
+      <div class="shopping-container">
+        <div class="left-col">
+          <div class="box cart-heading sbt-header">
+            <div>
+              <input type="checkbox" />
+              Tất cả (13 sản phẩm)
+            </div>
+            <div>Đơn giá</div>
+            <div>Số lượng</div>
+            <div>Thành tiền</div>
+            <span class="remove-all"
+              ><img
+                src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+                alt="deleted"
+            /></span>
+          </div>
+          <div class="box cart-content">
+            <div class="seller-group">
+              <input type="checkbox" />
+              <a href="#">Tiki Trading ></a>
+            </div>
+            <div id="product-list"></div>
+          </div>
+        </div>
+        <div class="right-col">
+          <div class="box delivery">
+            <div class="sbt-header">
+              <p>Giao tới</p>
+              <button class="text-button">Thay đổi</button>
+            </div>
+            <div class="customer-address">
+              <p>Student Name</p>
+              <p>Trường ĐH Công nghệ thông tin KP6, Linh Trung, Tp. Thủ Đức</p>
+            </div>
+          </div>
+          <div class="box discount">
+            <div class="sbt-header">
+              <p>Tiki khuyến mãi</p>
+              <div>Có thể chọn 2 (!)</div>
+            </div>
+            <div>Chọn hoặc nhập khuyến mãi khác</div>
+          </div>
+          <div class="box price-summary">
+            <div class="sbt-line">
+              <p>Tổng giá</p>
+              <div>150.000đ</div>
+            </div>
+            <hr />
+            <div class="sbt-line">
+              <p>Tổng tiền</p>
+              <div>
+                150.000đ
+                <p>(Đã bao gồm VAT nếu có)</p>
+              </div>
+            </div>
+          </div>
+          <button class="box buy-button">Mua Hàng</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- import scripts -->
+    <script src="scripts/script.js"></script>
+  </body>
 </html>
