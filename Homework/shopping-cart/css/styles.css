@@ -249,13 +249,13 @@ input[type='checkbox']:checked {
   display: inline-block;
   color: var(--normal-text);
   font-weight: 500;
-  margin-right: 4px;
+  margin-right: 2px;
 }
 
 .df-price {
   color: var(--gray);
   display: inline-block;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
 }
 
 .fn-price {
@@ -347,4 +347,20 @@ input[type='checkbox']:checked {
   .delivery {
     margin-top: 12px;
   }
+}
+
+.clear-button img {
+  pointer-events: none;
+}
+
+.remove-button img {
+  pointer-events: none;
+}
+
+.qty-decrease img {
+  pointer-events: none;
+}
+
+.qty-increase img {
+  pointer-events: none;
 }
