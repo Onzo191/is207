@@ -1,9 +1,14 @@
 :root {
-  --bg-color: rgb(225, 230, 230);
+  --bg-color: rgb(239, 239, 239);
   --container-bg-color: rgb(255, 255, 255);
   --bright-text: rgb(255, 255, 255);
+  --gray: rgb(153, 153, 153);
+  --dark-gray: rgb(51, 51, 51);
+  --red: rgb(255, 66, 78);
   --btn-color: rgb(255, 66, 78);
   --clicked-btn-color: rgb(245, 66, 78);
+  --text-color: rgb(36, 36, 36);
+  --tiki-blue: rgb(11, 116, 229);
 }
 
 * {
@@ -18,14 +23,13 @@ body {
   background: var(--bg-color);
 }
 
-button {
-  cursor: pointer;
-  border: none;
-  text-align: center;
+a {
+  text-decoration: none;
+  background-color: transparent;
 }
 
-button:hover {
-  opacity: 0.9;
+a:hover {
+  opacity: 0.95;
 }
 
 input[type='checkbox'] {
@@ -33,19 +37,15 @@ input[type='checkbox'] {
   height: 18px;
   border: 1px solid rgb(196, 196, 207);
   border-radius: 4px;
-  display: inline-block;
   vertical-align: middle;
-  margin: 0px 12px 0px 0px;
-  position: relative;
-  z-index: 1;
   color: rgb(196, 196, 207);
   background: transparent;
   cursor: pointer;
 }
 
 input[type='checkbox']:checked {
-  border-color: rgb(11, 116, 229);
-  background-color: rgb(11, 116, 229);
+  border-color: var(--tiki-blue);
+  background-color: var(--tiki-blue);
 }
 
 /* Class */
@@ -66,7 +66,7 @@ input[type='checkbox']:checked {
   text-transform: uppercase;
 }
 
-/* Shopping Cart, Customer payment info */
+/* Shopping container layout */
 .shopping-container {
   display: flex;
   flex-wrap: wrap;
@@ -84,6 +84,33 @@ input[type='checkbox']:checked {
   margin-left: 20px;
 }
 
+/* Product cart col layout */
+.product-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col1 {
+  width: 45%;
+}
+
+.col2 {
+  width: 20%;
+}
+
+.col3 {
+  width: 15%;
+}
+
+.col4 {
+  width: 15%;
+}
+
+.col5 {
+  width: 5%;
+}
+
 /* Reuseable styles */
 .box {
   padding: 8px 16px;
@@ -95,26 +122,40 @@ input[type='checkbox']:checked {
 .sbt-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   min-height: 36px;
-  align-items: center;
+  margin-bottom: 12px;
+}
+
+.gray-h {
+  font-weight: bold;
+  color: var(--gray);
+  font-size: 1.1rem;
+}
+
+.darkgray-l {
+  color: var(--dark-gray);
+  font-size: 1rem;
+}
+
+.darkgray-l-s {
+  display: block;
+  color: var(--dark-gray);
+  font-size: 0.8rem;
+}
+
+.black-h {
+  font-weight: bold;
+  color: var(--text-color);
 }
 
 .sbt-line {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: top;
-}
-
-.text-button {
-  background-color: transparent;
-  color: blue;
-  font-weight: bold;
-}
-
-.text-button:active {
-  color: blueviolet;
+  width: 100%;
+  padding: 16px 4px;
 }
 
 /* Cart */
@@ -125,67 +166,87 @@ input[type='checkbox']:checked {
 
 .cart-content {
   height: auto;
+  max-height: 440px;
   overflow: auto;
 }
 
-.product-row {
+.seller-group {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  height: 100px;
+  gap: 4px;
+  padding: 8px 0;
+}
+
+#product-list {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 32px;
 }
 
 .product-container {
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-col-title {
+  width: 95%;
+}
+
+.product {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
   height: 100px;
+  width: 95%;
+}
+
+.product-img {
+  width: 80px;
+  height: 80px;
+}
+
+.product-info {
+  flex-grow: 1;
+}
+
+.product-info p {
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 13px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+  line-height: 20px;
+}
+
+.product-info p:hover {
+  color: var(--tiki-blue);
+}
+
+.dc-price {
+  display: inline-block;
+  color: var(--text-color);
+  font-weight: bold;
+  margin-right: 4px;
 }
 
 .df-price {
-  width: 20%;
-}
-
-.qty-button-container {
-  width: 15%;
-}
-
-.qty-button-group {
-  display: inline-flex;
-  flex-wrap: nowrap;
-  border: 1px solid rgb(200, 200, 200);
-  border-radius: 4px;
-  width: 84px;
-}
-
-.qty-decrease {
+  color: var(--gray);
   display: inline-block;
-  border-right: 1px solid rgb(200, 200, 200);
-  color: rgb(153, 153, 153);
-  cursor: pointer;
-  width: 24px;
-  height: 24px;
+  font-size: 0.7rem;
 }
 
-.qty-increase {
-  border-right: none;
-  border-left: 1px solid rgb(200, 200, 200);
-}
-
-.qty-input {
-  border: none;
-  background: transparent;
-  width: 32px;
-  text-align: center;
-  font-size: 13px;
-  appearance: none;
-  margin: 0px;
-  outline: none;
-}
-
-.sum-price {
-  width: 15%;
+.fn-price {
+  display: block;
+  color: var(--red);
+  font-weight: bold;
 }
 
 /* Delivery */
@@ -202,29 +263,84 @@ input[type='checkbox']:checked {
   margin-bottom: 12px;
 }
 
+.discount-counting {
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+}
+
+.discount-counting svg {
+  margin-left: 4px;
+}
+
+.more-discount {
+  padding: 8px 0;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  color: var(--tiki-blue);
+  font-size: 0.9rem;
+  line-height: 1.2rem;
+  cursor: pointer;
+}
+
 /* Price summary */
 .price-summary {
   margin-bottom: 12px;
 }
 
-.buy-button {
-  width: 100%;
-  height: 42px;
-  background: var(--btn-color);
-  color: var(--container-bg-color);
+.total-price-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.buy-button:active {
-  background: var(--clicked-btn-color);
+.total-price {
+  color: var(--red);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#freeship-tag {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+  -webkit-box-align: center;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#freeship-tag img {
+  width: 80px;
+  margin-right: 4px;
 }
 
 @media (max-width: 800px) {
   .main-container {
     width: 100vw;
   }
+
   .right-col,
   .left-col {
     flex: 1 1 100%;
     margin: 0;
   }
+
+  .delivery {
+    margin-top: 12px;
+  }
+}
+
+.tiki_trade_icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.tiki-trade-link {
+  display: inline-block;
+  font-size: 15px;
+  color: var(--text-color);
+  font-weight: bold;
 }
