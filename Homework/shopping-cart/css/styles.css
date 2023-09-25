@@ -2,19 +2,20 @@
   --bg-color: rgb(239, 239, 239);
   --container-bg-color: rgb(255, 255, 255);
   --bright-text: rgb(255, 255, 255);
+  --normal-text: rgb(36, 36, 36);
   --gray: rgb(153, 153, 153);
   --dark-gray: rgb(51, 51, 51);
   --red: rgb(255, 66, 78);
+  --tiki-blue: rgb(11, 116, 229);
   --btn-color: rgb(255, 66, 78);
   --clicked-btn-color: rgb(245, 66, 78);
-  --text-color: rgb(36, 36, 36);
-  --tiki-blue: rgb(11, 116, 229);
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
   line-height: 1.15;
   text-size-adjust: 100%;
 }
@@ -129,7 +130,7 @@ input[type='checkbox']:checked {
 }
 
 .gray-h {
-  font-weight: bold;
+  font-weight: 500;
   color: var(--gray);
   font-size: 1.1rem;
 }
@@ -146,8 +147,8 @@ input[type='checkbox']:checked {
 }
 
 .black-h {
-  font-weight: bold;
-  color: var(--text-color);
+  font-weight: 500;
+  color: var(--normal-text);
 }
 
 .sbt-line {
@@ -162,6 +163,7 @@ input[type='checkbox']:checked {
 .cart-heading {
   position: sticky;
   margin-bottom: 12px;
+  font-size: 0.9rem;
 }
 
 .cart-content {
@@ -176,6 +178,19 @@ input[type='checkbox']:checked {
   align-items: center;
   gap: 4px;
   padding: 8px 0;
+}
+
+.seller_icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.seller-link {
+  display: inline-block;
+  font-size: 15px;
+  color: var(--normal-text);
+  font-weight: 500;
 }
 
 #product-list {
@@ -221,7 +236,7 @@ input[type='checkbox']:checked {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   font-size: 13px;
-  color: var(--text-color);
+  color: var(--normal-text);
   margin-bottom: 5px;
   line-height: 20px;
 }
@@ -232,8 +247,8 @@ input[type='checkbox']:checked {
 
 .dc-price {
   display: inline-block;
-  color: var(--text-color);
-  font-weight: bold;
+  color: var(--normal-text);
+  font-weight: 500;
   margin-right: 4px;
 }
 
@@ -246,7 +261,7 @@ input[type='checkbox']:checked {
 .fn-price {
   display: block;
   color: var(--red);
-  font-weight: bold;
+  font-weight: 500;
 }
 
 /* Delivery */
@@ -254,8 +269,8 @@ input[type='checkbox']:checked {
   margin-bottom: 12px;
 }
 
-.customer-address {
-  font-weight: bold;
+#customer-address {
+  font-weight: 500;
 }
 
 /* Discount */
@@ -269,13 +284,14 @@ input[type='checkbox']:checked {
   align-items: center;
 }
 
-.discount-counting svg {
-  margin-left: 4px;
+.discount-counting img {
+  margin-left: 2px;
 }
 
 .more-discount {
   padding: 8px 0;
   display: flex;
+  gap: 4px;
   -webkit-box-align: center;
   align-items: center;
   color: var(--tiki-blue);
@@ -295,10 +311,11 @@ input[type='checkbox']:checked {
   align-items: flex-end;
 }
 
-.total-price {
+#total-price-final {
   color: var(--red);
-  font-weight: bold;
+  font-weight: 500;
   font-size: 1.5rem;
+  margin-bottom: 4px;
 }
 
 #freeship-tag {
@@ -306,9 +323,9 @@ input[type='checkbox']:checked {
   display: flex;
   align-items: center;
   -webkit-box-align: center;
-  color: var(--text-color);
+  color: var(--normal-text);
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 #freeship-tag img {
@@ -330,17 +347,4 @@ input[type='checkbox']:checked {
   .delivery {
     margin-top: 12px;
   }
-}
-
-.tiki_trade_icon {
-  width: 16px;
-  height: 16px;
-  margin-left: 8px;
-}
-
-.tiki-trade-link {
-  display: inline-block;
-  font-size: 15px;
-  color: var(--text-color);
-  font-weight: bold;
 }

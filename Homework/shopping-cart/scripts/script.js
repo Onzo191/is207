@@ -70,13 +70,13 @@ function updateCartDisplay() {
       <div class="qty-button-group">
         <span class="qty-decrease"
           ><img
-            src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/decrease.svg"
+            src="./assets/images/decrease.svg"
             alt="decrease"
         /></span>
         <input type="tel" class="qty-input" value="${quantity}" />
         <span class="qty-increase"
           ><img
-            src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/increase.svg"
+            src="./assets/images/increase.svg"
             alt="increase"
         /></span>
       </div>
@@ -87,7 +87,7 @@ function updateCartDisplay() {
     <div class="col5">
       <button class="icon-button">
         <img
-          src="https://frontend.tikicdn.com/_desktop-next/static/img/icons/trash.svg"
+          src="./assets/images/trash.svg"
           alt="deleted"
         />
       </button>
