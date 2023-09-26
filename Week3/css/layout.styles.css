@@ -1,0 +1,67 @@
+:root {
+  --bg-color: white;
+  --box-color: lightgray;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Grid 
+    row/column
+    span, endin b col num
+
+*/
+
+.page {
+  height: 100vh;
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 200px 1fr 200px;
+  grid-template-rows: 80px 40px 1fr 52px;
+  gap: 8px;
+  background-color: var(--bg-color);
+}
+
+#header {
+  grid-column: 1 / span 3;
+  grid-row: 1;
+}
+
+#nav-bar {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
+#main-content {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#left-content {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#right-content {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#footer {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+}
+
+.box {
+  padding: 8px 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--box-color);
+  border-radius: 8px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
