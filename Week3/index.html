@@ -4,13 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/layout.styles.css" />
+    <link rel="stylesheet" href="css/button.styles.css" />
     <title>Basic Layout</title>
   </head>
   <body>
     <div class="page">
       <div id="header" class="box">Header</div>
       <div id="nav-bar" class="box">Navigation Menu</div>
-      <div id="main-content" class="box">Main Content</div>
+      <!-- <div id="main-content" class="box">Main Content</div> -->
+      <div id="main-content" class="box flex-col">
+        <h1>Main Content</h1>
+        <div class="gap4">
+          <span class="btn btn-primary">Primary</span>
+          <span class="btn btn-secondary">Secondary</span>
+          <span class="btn btn-success">Success</span>
+          <span class="btn btn-danger">Danger</span>
+          <span class="btn btn-warning">Warning</span>
+          <span class="btn btn-info">Info</span></div>
+      </div>
       <div id="left-content" class="box">Content</div>
       <div id="right-content" class="box">Content</div>
       <div id="footer" class="box">Footer</div>

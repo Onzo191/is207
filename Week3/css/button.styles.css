@@ -1,0 +1,95 @@
+:root {
+  /* Button color */
+  --btn: var(--asbestos);
+  --btn-text: var(--white);
+
+  /* Another button types */
+  /* Primary button */
+  --btn-primary: var(--peter-river);
+  --btn-primary-active: var(--belize-hole);
+  /* Secondary button */
+  --btn-secondary: var(--wet-asphalt);
+  --btn-secondary-active: var(--dark-night);
+  /* Success button */
+  --btn-success: var(--emerald);
+  --btn-success-active: var(--nephritis);
+  /* Danger button */
+  --btn-danger: var(--alizarin);
+  --btn-danger-active: var(--pomegranate);
+  /* Warning button */
+  --btn-warning: var(--carrot);
+  --btn-warning-active: var(--pumpkin);
+  /* Info button */
+  --btn-info: var(--turquoise);
+  --btn-info-active: var(--green-sea);
+}
+
+/* Button normal style */
+.btn {
+  padding: 8px 24px;
+  cursor: pointer;
+  border-radius: 8px;
+  background: var(--btn);
+  color: var(--btn-text);
+  font-size: 1rem;
+  font-weight: normal;
+  user-select: none;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+/* Primary button */
+.btn-primary{
+  background: var(--btn-primary);
+}
+
+.btn-primary:active {
+  background: var(--btn-primary-active);
+}
+
+/* Secondary button */
+.btn-secondary {
+  background: var(--btn-secondary);
+}
+
+.btn-secondary:active {
+  background: var(--btn-secondary-active);
+}
+
+/* Success button */
+.btn-success {
+  background: var(--btn-success);
+}
+
+.btn-success:active {
+  background: var(--btn-success-active);
+}
+
+/* Buy button */
+.btn-danger {
+  background: var(--btn-danger);
+}
+
+.btn-danger:active {
+  background: var(--btn-danger-active);
+}
+
+/* Buy button */
+.btn-warning {
+  background: var(--btn-warning);
+}
+
+.btn-warning:active {
+  background: var(--btn-warning-active);
+}
+
+/* Buy button */
+.btn-info {
+  background: var(--btn-info);
+}
+
+.btn-info:active {
+  background: var(--btn-info-active);
+}

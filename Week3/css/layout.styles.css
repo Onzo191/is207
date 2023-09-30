@@ -1,6 +1,31 @@
 :root {
-  --bg-color: white;
-  --box-color: lightgray;
+  /* My color collection */
+  --peter-river: #3498db;
+  --belize-hole: #2980b9;
+  --turquoise: #1abc9c;
+  --green-sea: #16a085;
+  --emerald: #2ecc71;
+  --nephritis: #28ae60;
+  --amethyst: #9b59b6;
+  --wisteria: #8e44ad;
+  --wet-asphalt: #34495e;
+  --dark-night: #2c3e50;
+  --sunflower: #f1c40f;
+  --orange: #f39c12;
+  --carrot: #e67e22;
+  --pumpkin: #d35400;
+  --alizarin: #e74c3c;
+  --pomegranate: #c0392b;
+  --cloud: #ecf0f1;
+  --silver: #bdc3c7;
+  --concrete: #95a5a6;
+  --asbestos: #7f8c8d;
+  --white: white;
+  --black: black;
+
+  /* Elements */
+  --background: var(--white);
+  --box: var(--cloud);
 }
 
 * {
@@ -22,7 +47,7 @@
   grid-template-columns: 200px 1fr 200px;
   grid-template-rows: 80px 40px 1fr 52px;
   gap: 8px;
-  background-color: var(--bg-color);
+  background-color: var(--background);
 }
 
 #header {
@@ -60,8 +85,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--box-color);
+  background-color: var(--box);
   border-radius: 8px;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.flex-col {
+  flex-direction: column;
+  gap: 24px;
+}
+
+.gap4 {
+  gap: 4px;
 }
