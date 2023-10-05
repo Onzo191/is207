@@ -1,0 +1,121 @@
+.header {
+  height: 160px;
+}
+
+.header-top {
+  display: flex;
+  height: 120px;
+  padding: 12px 0;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  width: 60px;
+}
+
+.logo-name {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+
+.logo-sologan {
+  margin-top: 4px;
+  font-size: 1rem;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  color: #999891;
+}
+
+.tel-container {
+  height: 48px;
+  text-align: right;
+}
+
+.tel-desc {
+  font-size: 1rem;
+  color: #585755;
+}
+
+.tel-number {
+  float: right;
+  font-size: 1.4rem;
+  color: #373737;
+}
+
+.tel-number span {
+  color: var(--primary--color);
+}
+
+.tel-number:hover {
+  color: var(--primary--color);
+  cursor: pointer;
+}
+
+.pages {
+  display: block;
+}
+
+.pages-list {
+  display: flex;
+}
+
+.pages-link {
+  display: block;
+  padding: 6px;
+  font-size: 14px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-left: 14px;
+}
+
+.pages-item:first-child .pages-link {
+  background-image: var(--button--color);
+  border-radius: 4px;
+  color: var(--white);
+}
+
+.pages-item:hover .pages-link {
+  background-image: var(--button--color);
+  border-radius: 4px;
+  color: var(--white);
+}
+
+.menu {
+  width: 100%;
+  background-image: var(--button--color);
+  border-radius: 5px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-item {
+  list-style: none;
+}
+
+.menu-link {
+  display: block;
+  text-decoration: none;
+  padding: 12px 20px;
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.menu-link:hover {
+  color: var(--green--3);
+  background-color: var(--gray--4);
+}
+
+.menu-item:first-child .menu-link:hover {
+  border-radius: 5px 0px 0px 5px;
+}

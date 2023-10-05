@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natural Tour</title>
+
+    <!-- Import -->
+    <link rel="stylesheet" href="assets/css/base.styles.css" />
+    <link rel="stylesheet" href="assets/css/header.styles.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.styles.css" />
+    <link rel="stylesheet" href="assets/css/footer.styles.css" />
+    <script src="scripts/cardRender.js" defer></script>
+    <script src="scripts/loadContent.js" defer></script>
+  </head>
+  <body>
+    <!-- Header -->
+    <div id="header-container"></div>
+    <div id="main">
+      <!-- Main content -->
+      <div id="main-content">
+        <div class="content__banner">
+          <div class="banner__slide">
+            <div class="banner__slide-img">
+              <img src="./assets/images/banner.jpeg" alt="lion" />
+            </div>
+            <div class="banner__wrap">
+              <div class="wrap__new-tours">
+                <!-- Start -->
+                <p class="new-tours__our">Our<br /><span>New Tours</span></p>
+                <p class="new-tours__intro">
+                  Đến với <span class="text-upper">nature tours</span> bạn có thể tham quan hoặc tìm
+                  kiếm thông tin về các thắng cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.<br />
+                  <a href="#" class="new-tours__intro-read-more">Continue reading...</a>
+                </p>
+                <!-- End -->
+                <nav class="warp__slide">
+                  <ul class="warp__slide-list">
+                    <li class="warp__slide-item"><a href="#">1</a></li>
+                    <li class="warp__slide-item"><a href="#">2</a></li>
+                    <li class="warp__slide-item"><a href="#">3</a></li>
+                    <li class="warp__slide-item"><a href="#">4</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+          <div class="banner__welcome">
+            <h1 class="text-upper">Lorem ipsum <span class="text-primary">dolor</span> sit amet</h1>
+            <p>
+              Blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+              Nam <br />
+              liber tempor cum soluta nobis <a href="#" class="text-primary">tutorials guides</a>.
+            </p>
+            <div class="banner__welcome-img">
+              <img src="./assets/images/banner-wellcom.png" alt="banner-wellcom" />
+            </div>
+          </div>
+        </div>
+        <div class="content__post-content">
+          <div class="content__menu">
+            <ul class="content__menu-list">
+              <li class="content__menu-item content__menu-item--active">
+                <a class="content__menu-link" href="">By Destination</a>
+              </li>
+              <li class="content__menu-item">
+                <a class="content__menu-link" href="">By Species</a>
+              </li>
+              <li class="content__menu-item">
+                <a class="content__menu-link" href="">By Tour Type</a>
+              </li>
+            </ul>
+          </div>
+          <div class="post-content">
+            <ul class="post-content-list">
+              <template id="post-content-item-template">
+                <li class="post-content-item">
+                  <a href="" class="post-content-link">
+                    <div class="post-content-img">
+                      <img src="" alt="" />
+                    </div>
+                    <h5 class="post-content-title"></h5>
+                  </a>
+                  <p></p>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div id="sidebar-container"></div>
+    </div>
+    <!-- Footer -->
+    <div id="footer-container"></div>
+  </body>
+</html>
