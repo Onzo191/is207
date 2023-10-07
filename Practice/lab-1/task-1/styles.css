@@ -1,3 +1,10 @@
+:root {
+  --yellow: yellow;
+
+  --img--h: 160px;
+  --img--w: 160px;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,10 +12,13 @@
 }
 
 #mewmewmew {
-  background-color: yellow;
+  background-color: var(--yellow);
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
 .container {
@@ -19,11 +29,15 @@
 
 .card {
   display: flex;
-  align-items: end;
-  width: 24%;
+  flex-direction: column;
+  gap: 2px;
+  align-items: start;
   height: 160px;
+  width: 300px;
 }
 
 .card img {
-  height: 160px;
+  height: var(--img--h);
+  width: var(--img--w);
+  object-fit: cover;
 }

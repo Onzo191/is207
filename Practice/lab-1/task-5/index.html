@@ -7,30 +7,36 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="container">
-      <h1>Đăng nhập hệ thống</h1>
+    <div class="box">
+      <h1 class="title">Đăng nhập hệ thống</h1>
       <hr />
-      <form action="#" method="POST">
-        <div class="form-group">
-          <label for="username">Tên đăng nhập:</label>
-          <input type="text" id="username" name="username" required />
-        </div>
-        <div class="form-group">
-          <label for="password">Mật khẩu:</label>
-          <input type="password" id="password" name="password" required />
-        </div>
-        <div class="form-group">
-          <button type="submit">Đăng nhập</button>
-        </div>
+      <form class="form" action="">
+        <table>
+          <tr>
+            <td class="cl1"><label for="username">Tên đăng nhập:</label></td>
+            <td class="cl2">
+              <input type="text" id="username" name="username" placeholder="nhập tên" required />
+            </td>
+          </tr>
+          <tr>
+            <td class="cl1"><label for="password">Mật khẩu:</label></td>
+            <td class="cl2">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="nhập mã số"
+                required
+              />
+            </td>
+          </tr>
+          <tr>
+            <td></td>
+            <td><button type="submit">Đăng nhập</button></td>
+          </tr>
+        </table>
+        <p><a href="#">Quên mật khẩu</a>/<a href="#"> Đăng ký</a></p>
       </form>
-      <div>
-        <div class="forgot-password">
-          <a href="#">Forgot Password?</a>
-        </div>
-        <div class="sign-up">
-          <p>Don't have an account? <a href="#">Sign Up</a></p>
-        </div>
-      </div>
       <hr />
     </div>
   </body>

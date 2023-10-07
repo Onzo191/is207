@@ -3,40 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
-    <title>Simple Website</title>
   </head>
   <body>
-    <header>
-      <h1>Trường đại học công nghệ thông tin</h1>
+    <header id="header">
+      <div class="logo"><img src="img/logo.jpg" alt="Logo" /></div>
+      <div class="title">TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN</div>
     </header>
-    <nav>
-      <ul class="page-links">
-        <li><a href="#">Trang chủ</a></li>
-        <li><a href="#">Thông tin</a></li>
-        <li><a href="#">Giới thiệu</a></li>
-        <li><a href="#">Tuyển sinh</a></li>
-        <li><a href="#">Nghiên cứu</a></li>
-      </ul>
+    <nav id="navbar">
+      <div class="navitem">Trang chủ</div>
+      <div class="navitem">Thông tin</div>
+      <div class="navitem">Giới thiệu</div>
+      <div class="navitem">Tuyển sinh</div>
+      <div class="navitem">Nghiên cứu</div>
     </nav>
-
-    <aside>
-      <h2>Thông tin mới nhất về kỳ thi THPT quốc gia</h2>
-      <p>
-        Sáng 10/12. Phó Cục trưởng Cục Giám thi & Kiểm định chất lượng. Bộ GD-ĐT Trần Văn Nghĩa tiếp
-        tục đáp ứng hàng loạt câu hỏi liên quan đến kỳ thi THPT quốc gia 2022.
+    <main id="content">
+      <div class="box">
+        <h2 class="title">Chương trình tiên tiến</h2>
+        <p class="paragraph">Chương trình đào tạo tiên tiến là dự án quốc gia do Bộ GD&ĐT</p>
+        <p class="creator">Khoa HTT</p>
+      </div>
+      <div class="box">
+        <h2 class="title">Ngành An Toàn Thông Tin</h2>
+        <p class="paragraph">
+          Chương trình đào tạo kỹ sư tài năng ngành An toàn Thông tin cho phép sinh viên tiếp cận
+          với một chương trình đào tạo tiên tiến, thực tập với những công nghệ hiện đại, được sử
+          dụng những tài liệu mới cập nhật và học tập trong điều kiện chất lượng cao.
+        </p>
+        <p class="creator">Khoa MMT</p>
+      </div>
+    </main>
+    <aside id="sidebar">
+      <h2 class="title">Thông tin mới nhất về kỳ thi THPT Quốc gia 2018</h2>
+      <p class="paragraph">
+        Sáng 10/12, Phó Cục trưởng Cục Khảo thi & Kiểm định chất lượng, Bộ GD-ĐT Trần Văn Nghĩa tiếp
+        tục giải đáp hàng loạt câu hỏi nóng liên quan đến kỳ thi THPT quốc gia năm 2015.
       </p>
     </aside>
-
-    <main>
-      <section>
-        <h2>Chương trình tiên tiến</h2>
-        <p>Một cơn mưa đi qua để lại, những kí ức anh và em</p>
-      </section>
-    </main>
-
-    <footer>
-      <p>Copyright &copy;2023</p>
-    </footer>
+    <footer id="footer">Copyright 2014</footer>
   </body>
 </html>

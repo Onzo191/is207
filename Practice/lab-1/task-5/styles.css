@@ -1,72 +1,62 @@
+:root {
+  --title: #8a2be2;
+  --line: #0000ff;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 12px;
-  font-family: Arial, Helvetica, sans-serif;
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 hr {
-  border-width: 2px;
-  border-color: #0000ff;
+  border: 1px solid var(--line);
 }
 
-h1 {
-  color: #8a2be2;
-}
-
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 24px;
-  width: 400px;
-  margin: 32px auto;
-  border-radius: 8px;
-  padding: 20px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: bold;
-}
-
-input[type='text'],
-input[type='password'] {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-button[type='submit'] {
-  background-color: #007bff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+button {
+  padding: 4px;
+  border: 1px solid;
+  border-radius: 16px;
   cursor: pointer;
 }
 
-button[type='submit']:hover {
-  background-color: #0056b3;
+table {
+  width: 300px;
+  margin: 0 auto;
+}
+td {
+  padding: 4px;
 }
 
-.forgot-password,
-.sign-up {
+p {
   text-align: center;
 }
 
-.forgot-password a,
-.sign-up a {
-  text-decoration: none;
-  color: #007bff;
+.title {
+  color: var(--title);
+  text-align: center;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 400px;
+  height: 200px;
+}
+
+.cl1 {
+  width: 150px;
+}
+
+.cl2 {
+  width: 150px;
 }

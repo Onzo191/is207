@@ -1,3 +1,13 @@
+:root {
+  --bg--color: white;
+  --page--color: lightgray;
+  --border--color: red;
+  --header--color: white;
+  --navbar--color: linear-gradient(to bottom right, seagreen, black);
+  --navbar--color--hover: linear-gradient(to top right, seagreen, black);
+  --sidebar--color: aquamarine;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -7,76 +17,118 @@
 html {
   font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg--color);
 }
 
 body {
-  width: 90%;
-  margin: 0 auto;
+  width: 1100px;
   display: grid;
+  padding: 12px;
+  border: 1px solid var(--border--color);
+  margin: 30px auto;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 120px 50px 300px 50px;
   grid-template-areas:
     'header header header'
-    'nav nav nav'
-    'main main aside'
+    'navbar navbar searchbox'
+    'main main sidebar'
     'footer footer footer';
+  gap: 12px;
+
+  background-color: var(--page--color);
 }
 
-header {
+/* Header */
+#header {
   grid-area: header;
-  background-color: #333;
-  color: white;
-  padding: 10px;
-}
-
-nav {
-  grid-area: nav;
-  background-color: #222;
-  color: white;
-  padding: 10px;
-}
-
-nav ul {
   display: flex;
-  list-style: none;
+  padding: 8px;
+  gap: 8px;
+  align-items: center;
+  background-color: var(--bg--color);
 }
 
-nav li {
-  padding: 8px 12px;
-  position: relative;
+#header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 100px;
 }
 
-nav li:not(:last-child)::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 1px; /* Width of the vertical line */
-  background-color: white;
+#header .title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#header img {
+  height: 80%;
+}
+
+/* Navigation bar */
+#navbar {
+  grid-area: navbar;
+  display: flex;
+}
+
+.navitem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+  height: 100%;
+  border: 2px solid black;
+  background-image: var(--navbar--color);
+  color: white;
   cursor: pointer;
+  user-select: none;
 }
 
-nav a {
-  text-decoration: none;
-  color: white;
+.navitem:hover {
+  background-image: var(--navbar--color--hover);
 }
 
-aside {
-  grid-area: aside;
-  background-color: #eee;
-  padding: 20px;
+.navitem:active {
+  opacity: 0.9;
 }
 
-main {
+/* Main content */
+#content {
   grid-area: main;
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid blue;
 }
 
-footer {
-  grid-area: footer;
-  background-color: #333;
-  color: white;
+.box {
+  padding: 16px;
+  border: 1px solid var(--border--color);
   text-align: center;
-  padding: 10px;
+}
+
+.creator {
+  text-align: right;
+}
+
+/* Sidebar */
+#sidebar {
+  grid-area: sidebar;
+  padding: 24px;
+  text-align: center;
+  background-color: var(--sidebar--color);
+  border: 1px solid var(--border--color);
+}
+
+#sidebar .title {
+  text-transform: uppercase;
+}
+
+/* Footer */
+#footer {
+  grid-area: footer;
+  border-top: 3px solid seagreen;
+  text-align: center;
+  padding: 12px;
 }
