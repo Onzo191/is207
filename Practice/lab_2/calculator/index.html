@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Máy Tính Cơ Bản</title>
+    <link rel="stylesheet" type="text/css" href="css/base.styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/calculator.styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/button.styles.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="screen">
+        <div id="expression-display"></div>
+        <div id="result-display">0</div>
+      </div>
+      <div class="btn-container">
+        <button class="btn-red" onclick="clearDisplay()">C</button>
+        <button class="btn-yellow" onclick="clearEntry()">CE</button>
+        <button class="btn-green" onclick="appendToDisplay('+')">+</button>
+        <button class="btn-green" onclick="appendToDisplay('-')">-</button>
+        <button class="btn-green" onclick="appendToDisplay('*')">*</button>
+        <button class="btn-green" onclick="appendToDisplay('/')">/</button>
+        <button class="btn-blue" onclick="appendToDisplay('9')">9</button>
+        <button class="btn-blue" onclick="appendToDisplay('8')">8</button>
+        <button class="btn-blue" onclick="appendToDisplay('7')">7</button>
+        <button class="btn-blue" onclick="appendToDisplay('6')">6</button>
+        <button class="btn-blue" onclick="appendToDisplay('5')">5</button>
+        <button class="btn-blue" onclick="appendToDisplay('4')">4</button>
+        <button class="btn-blue" onclick="appendToDisplay('3')">3</button>
+        <button class="btn-blue" onclick="appendToDisplay('2')">2</button>
+        <button class="btn-blue" onclick="appendToDisplay('1')">1</button>
+        <button class="btn-blue" onclick="appendToDisplay('0')">0</button>
+        <button class="btn-lightblue" onclick="appendToDisplay('.')">.</button>
+        <button class="btn-lightblue" onclick="calculateResult()">=</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

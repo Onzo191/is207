@@ -1,0 +1,58 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type='address'] {
+  width: 100%;
+}
+
+input[type='number'] {
+  width: 169px;
+}
+
+button {
+  padding: 2px 8px;
+}
+
+.gacha-form {
+  width: 650px;
+  background-color: #ffedca;
+  padding: 24px 8px;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 32px auto 12px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+td {
+  text-align: left;
+  padding: 2px;
+}
+
+.column1 {
+  width: 150px;
+  color: blue;
+}
+
+.column2 {
+  width: 450px;
+}
+
+.column3 {
+  text-align: center;
+}

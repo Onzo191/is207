@@ -1,0 +1,131 @@
+#sidebar {
+  width: 25%;
+  padding: 24px;
+  flex-grow: 1;
+  background-color: var(--gray--2);
+}
+
+.sidebar .title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Holiday search */
+.holiday-search-title {
+  font-size: 1.4rem;
+}
+
+.holiday-search-form .selector {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding-left: 5px;
+  border: 1px solid var(--border--color);
+  border-radius: 5px;
+  background-image: linear-gradient(180deg, var(--white), var(--gray--1));
+  margin-top: 20px;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.holiday-search-button {
+  display: flex;
+  align-items: center;
+  height: 41.5px;
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 24px;
+  background-color: var(--green--1);
+  color: var(--white);
+  font-size: 1.2rem;
+  position: relative;
+  width: 90%;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.holiday-search-button::after {
+  position: absolute;
+  content: '';
+  right: -15px;
+  top: 5.5px;
+  width: 30px;
+  height: 30px;
+  background-color: var(--green--1);
+  transform: rotate(45deg);
+  z-index: 1;
+  cursor: pointer;
+}
+
+.holiday-search-button-icon i {
+  margin-left: 20px;
+}
+
+/* Quick search & Newsletter */
+.newsletter-signup-container,
+.quick-search-container {
+  margin-bottom: 24px;
+}
+
+.newsletter-signup-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  gap: 8px;
+}
+
+.quick-search-title,
+.newsletter-signup-title,
+.lastest-news-title {
+  margin-top: 24px;
+  font-size: 1.4rem;
+}
+
+.quick-search-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+
+.quick-search-form .input,
+.newsletter-signup-form .input {
+  font-size: 1.2rem;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+
+.w100 {
+  width: 100%;
+}
+.w60 {
+  width: 60%;
+}
+
+.quick-search-button,
+.newsletter-signup-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 36%;
+  padding: 8px;
+  border-radius: 6px;
+  background-color: var(--green--1);
+  color: var(--white);
+  cursor: pointer;
+}
+
+.pw {
+  display: flex;
+  justify-content: space-between;
+}
+
+.news {
+  margin-bottom: 24px;
+}
+
+.news-title {
+  margin-bottom: 4px;
+  font-size: 1.2rem;
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BTVN</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/main-content.css" />
+    <link rel="stylesheet" href="assets/css/navbar.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/sidebar.css" />
+    <script src="scripts/blog-render.js" defer></script>
+  </head>
+  <body>
+    <div>
+      <!-- Header -->
+      <header id="header">
+        <a href="#">
+          <div class="logo">
+            <img class="logo-img" src="assets/images/logo.svg" alt="Logo" />
+            <div class="logo-text">
+              <p class="name">Nature Tour</p>
+              <p class="slogan">Cùng bạn du lịch năm châu</p>
+            </div>
+          </div>
+        </a>
+        <div>
+          <div class="tel-container">
+            <p class="tel-desc">Contact Us by the telephone number below</p>
+            <p class="tel-number">12<span> (0) 12</span>34 567890</p>
+          </div>
+
+          <div class="pages">
+            <div class="page-item"><a href="#" class="page-link">Home</a></div>
+            <div class="page-item"><a href="#" class="page-link">About</a></div>
+            <div class="page-item"><a href="#" class="page-link">Donate</a></div>
+            <div class="page-item"><a href="#" class="page-link">Video</a></div>
+            <div class="page-item"><a href="#" class="page-link">Contact</a></div>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation bar -->
+      <nav id="navbar">
+        <div class="nav-link">Home</div>
+        <div class="nav-link">Donate</div>
+        <div class="nav-link">About us</div>
+        <div class="nav-link">Tour</div>
+        <div class="nav-link">Nature</div>
+        <div class="nav-link">Tops</div>
+        <div class="nav-link">Contact us</div>
+      </nav>
+
+      <!-- Main -->
+      <div id="main">
+        <div id="content">
+          <div class="intro">
+            <div class="banner">
+              <div class="banner-img-container">
+                <img class="banner-img" src="./assets/images/banner.jpeg" alt="Banner" />
+              </div>
+              <div class="banner-content-container">
+                <div class="banner-title">
+                  <span class="sm-text">Our</span>
+                  <span class="lg-text">New Tours</span>
+                </div>
+                <div class="banner-content">
+                  <p>
+                    Đến với NATURE TOURS bạn có thể tham quan hoặc tìm kiếm thông tin về các thắng
+                    cảnh ở bất kì nơi nào trên thế giới mà bạn muốn.
+                  </p>
+                  <a href="#" class="read-more">Continue reading...</a>
+                </div>
+                <div class="banner-nav">
+                  <div class="nav-item">1</div>
+                  <div class="nav-item">2</div>
+                  <div class="nav-item">3</div>
+                  <div class="nav-item">4</div>
+                </div>
+              </div>
+            </div>
+            <div class="page-title-container">
+              <div class="page-title">
+                <h1 class="text-upper">
+                  Lorem ipsum <span class="text-primary">dolor</span> sit amet
+                </h1>
+                <p>
+                  Blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla
+                  facilisi. Nam liber tempor cum soluta nobis
+                  <a href="#" class="text-primary">tutorials guides</a>.
+                </p>
+              </div>
+              <div class="page-title-img-container">
+                <img class="page-title-img" src="./assets/images/banner-ptg.png" alt="banner-ptg" />
+              </div>
+            </div>
+          </div>
+          <div class="blog-section">
+            <div class="blog-nav">
+              <div class="nav-item active">By Destination</div>
+              <div class="nav-item">By Species</div>
+              <div class="nav-item">By Tour Type</div>
+            </div>
+            <div class="blog-container">
+              <template id="blog-template">
+                <div class="blog">
+                  <a href="#" class="blog-link">
+                    <div class="blog-img">
+                      <img src="" alt="" />
+                    </div>
+                    <h5 class="blog-title"></h5>
+                  </a>
+                  <p class="blog-desc"></p>
+                </div>
+              </template>
+            </div>
+          </div>
+        </div>
+        <aside id="sidebar">
+          <div class="holiday-search-container">
+            <h3 class="holiday-search-title text-upper">Holiday Search</h3>
+
+            <form class="holiday-search-form" action="">
+              <p>Chọn nơi bạn muốn tham quan:</p>
+              <select name="area" class="selector">
+                <option value="Chọn khu vực">Chọn khu vực</option>
+                <option value="Khu vực 1">Khu vực 1</option>
+                <option value="Khu vực 2">Khu vực 2</option>
+                <option value="Khu vực 3">Khu vực 3</option>
+              </select>
+
+              <select name="theme" class="selector">
+                <option value="Chọn chủ đề">Chọn chủ đề</option>
+                <option value="Chủ đề 1">Chủ đề 1</option>
+                <option value="Chủ đề 2">Chủ đề 2</option>
+                <option value="Chủ đề 3">Chủ đề 3</option>
+              </select>
+
+              <select name="theme" class="selector">
+                <option value="Chọn ngày du lịch">Chọn ngày du lịch</option>
+                <option value="Ngày 1">Ngày 1</option>
+                <option value="Ngày 2">Ngày 2</option>
+                <option value="Ngày 3">Ngày 3</option>
+              </select>
+
+              <select name="theme" class="selector">
+                <option value="Chọn mức giá">Chọn mức giá</option>
+                <option value="Mức 1">Mức 1</option>
+                <option value="Mức 2">Mức 2</option>
+                <option value="Mức 3">Mức 3</option>
+              </select>
+              <div class="holiday-search-button">
+                Search Holidays
+                <div class="holiday-search-icon">
+                  <i class="ti-arrow-circle-right"></i>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="quick-search-container">
+            <h3 class="quick-search-title text-upper">Quick Search</h3>
+            <p>Tìm thông tin nơi bạn tham quan:</p>
+            <form class="quick-search-form">
+              <input type="text" class="input w60" placeholder="Country/Code ..." />
+              <div class="quick-search-button text-upper">Search</div>
+            </form>
+          </div>
+          <hr />
+          <div class="newsletter-signup-container">
+            <h3 class="newsletter-signup-title text-upper">Newsletter-Signup</h3>
+            <p>Lorem ipsum dolor sit amet, Lorem ipsum dolor sit amet</p>
+            <form class="newsletter-signup-form">
+              <input type="email" class="input w100" placeholder="Enter email ..." />
+              <div class="pw">
+                <input type="text" class="input w60" placeholder="Enter name ..." />
+                <div class="newsletter-signup-button text-upper">Sign up</div>
+              </div>
+            </form>
+          </div>
+          <hr />
+          <div class="lastest-news-container">
+            <h3 class="lastest-news-title text-upper">Lastest News</h3>
+            <div class="news">
+              <h5><a class="news-title text-primary" href="#">Dolor sit amet ipsum dolor</a></h5>
+              <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                euismod tincidunt ut claritatem. Investigationes.
+              </p>
+            </div>
+            <div class="news">
+              <h5><a class="news-title normal-text" href="#">Lorem ipsum dolor sit amet</a></h5>
+              <p>
+                Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum
+                claritatem. Investigationes demonstraverunt lectores
+              </p>
+            </div>
+            <div class="news">
+              <h5><a class="news-title normal-text" href="#">Lorem ipsum dolor sit amet</a></h5>
+              <p>
+                Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie
+                consequat, vel illum dolore eu feugiat nulla facilisis at vero
+              </p>
+            </div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-main-box">
+          <div class="footer-title">
+            <p class="footer-title-text">
+              Option congue nihil imperdiet doming id quod mazim place. Investingationes
+              demonstraverunt
+            </p>
+          </div>
+          <div class="footer-content">
+            <div class="cl cl-side">
+              <div class="cl-title">Follow on twitter</div>
+              <p class="text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
+                eusimod volutpat.
+              </p>
+              <div class="btn-facebook">
+                <div class="btn-text">
+                  <p>join us on facebook</p>
+                </div>
+                <div class="btn-icon"></div>
+              </div>
+            </div>
+            <div class="cl cl-center">
+              <div class="cl-title">Liên kết</div>
+              <div class="link-container">
+                <div class="cl-3">
+                  <p class="text">Lorem ipsum</p>
+                  <p class="text">Duis autem</p>
+                  <p class="text"><b>Typi non habent</b></p>
+                  <p class="text">Odio dignissim</p>
+                  <p class="text">Accumsan et</p>
+                </div>
+                <div class="cl-3">
+                  <p class="text">Dotor sit amet</p>
+                  <p class="text">FAQs</p>
+                  <p class="text">Home</p>
+                  <p class="text">Clients</p>
+                  <p class="text">Donate</p>
+                </div>
+                <div class="cl-3">
+                  <p class="text">BBC Vietnamese</p>
+                  <p class="text">Quanta decima et</p>
+                  <p class="text">Legene me lius</p>
+                  <p class="text">Contact Us</p>
+                </div>
+              </div>
+            </div>
+            <div class="cl cl-side">
+              <div class="cl-title">Contact us</div>
+              <div>
+                <p class="text pt-8"><b>Tel:</b>12345 678890</p>
+                <p class="text"><b>Email</b>jerry2099tom@gmail.com</p>
+              </div>
+              <div>
+                <p class="text">Nature tour, Your City,<br />Your state 123 456 789</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="copyright">
+          <p class="title">© Nature tour 2013</p>
+          <p class="subtitle">
+            Copyright and design by
+            <span class="LINK">izwbez.com</span>.
+            <a href="#">All right reserved</a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

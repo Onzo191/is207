@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form action="">
+      <div class="gacha-form">
+        <h1>Phiếu đăng ký tham gia dự thưởng</h1>
+        <table>
+          <tr>
+            <td class="column1"><p>Họ và tên</p></td>
+            <td class="column2"><input type="text" placeholder="Nguyễn Văn A" /></td>
+          </tr>
+          <tr>
+            <td class="column1"><p>Địa chỉ</p></td>
+            <td class="column2"><input type="address" placeholder="abc, xyz, jqk" /></td>
+          </tr>
+          <tr>
+            <td class="column1"><p>Số điện thoại</p></td>
+            <td class="column2"><input type="tel" placeholder="09xxxxxxxx" /></td>
+          </tr>
+          <tr>
+            <td class="column1"><p>Phái</p></td>
+            <td class="column2">
+              <label> <input type="radio" name="gender" value="nam" /> Nam </label>
+              <label> <input type="radio" name="gender" value="nu" /> Nữ </label>
+            </td>
+          </tr>
+          <tr>
+            <td class="column1"><p>Sản phẩm</p></td>
+            <td class="column2">
+              <select name="product" multiple>
+                <option value="">Iphone 11 Pro Max</option>
+                <option value="">Samsung Galaxy Note 20</option>
+                <option value="">Xiaomi Redmi K30</option>
+                <option value="">OPPO A53</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td class="column1"><p>Số dự đoán</p></td>
+            <td class="column2">
+              <input type="number" name="quantity" min="0" max="10" step="1" value="5" />
+            </td>
+          </tr>
+          <tr>
+            <td class="column3" colspan="2"><button>Đăng ký</button></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+  </body>
+</html>

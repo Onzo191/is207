@@ -1,0 +1,67 @@
+:root {
+  /* Color collection */
+  --white: #ffffff;
+  --black: #000000;
+  --gray--1: #e5e5e5;
+  --gray--2: #c5c5c5;
+  --gray--3: #999891;
+  --gray--4: #858682;
+  --gray--5: #6d6d66;
+  --green--1: #2dc737;
+  --green--2: #18991e;
+  --green--3: #475e4d;
+
+  /*  Elements */
+  --background-color: linear-gradient(180deg, #f4f0e8, #e4dcca);
+  --navbar--color: linear-gradient(180deg, var(--green--1), var(--green--1));
+  --primary--color: var(--green--2);
+  --button--color: linear-gradient(180deg, var(--green--1), var(--green--1));
+  --text--color: var(--gray--3);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 90%;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-image: var(--background-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+#main {
+  display: flex;
+  margin: 32px 0;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.text-primary {
+  color: var(--primary--color);
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.normal-text {
+  color: var(--black);
+}
